@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Hector</title>
 </head>
+
 <body>
-    
+    <main class="main">
+        <header class="header">
+            <div class="container_header container">
+                <button class="burger_icon">
+                    <span></span>
+                </button>
+                <nav class="main_menu">
+                    <ul class="main_menu_collapse">
+                        <li class="category"><a href="#">КАТАЛОГ</a></li>
+                        <li><a href="#">SALE</a></li>
+                        <li><a href="#">ОПТ</a></li>
+                        <li><a href="#">О НАС</a></li>
+                        <li><a href="#">ОТЗЫВЫ</a></li>
+                        <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="logo" title="logo">
+                    <svg>
+                        <use xlink:href="./img/svg/symbols.svg#logo"></use>
+                    </svg>
+                </a>
+                <ul class="user_menu">
+                    <li>
+                       <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#search"></use>
+                            </svg>
+                       </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#favorites"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#basket"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#user_icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="main_container container">
+            <div class="title_main">   
+                <h2>МУЖСКАЯ КОЛЛЕКЦИЯ</h2>
+                <p>Распродажа коллекций со скидками до 50%, доставка до вашего склада</p>
+                <a href="#" class="detailed_btn">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="mein_slider">
+                <div class="owl-carousel">
+                    <div class="slide" data-dot="<button>01</button>"> 
+                        <img src="./img/men_title.webp" alt="men title">
+                    </div>
+                    <div class="slide" data-dot="<button>02</button>">
+                        <img src="./img/men_title.webp" alt="men title">
+                    </div>
+                    <div class="slide" data-dot="<button>03</button>">
+                        <img src="./img/men_title.webp" alt="men title">
+                    </div>
+                    <div class="slide" data-dot="<button>04</button>">
+                        <img src="./img/men_title.webp" alt="men title">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <script src="./script/script.js" defer></script>
 </body>
+
 </html>

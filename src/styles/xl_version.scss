@@ -1,0 +1,24 @@
+@media screen and (min-width: 1200px) {
+  .main_container {
+    .title_main h2 {
+        font-size: 68px;
+    }
+    .mein_slider {
+      .owl-carousel {
+        .owl-dot {
+          button {
+            font-size: 36px;
+            line-height: 44px;
+          }
+
+          &.active {
+            button {
+              font-size: 64px;
+              line-height: 78px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

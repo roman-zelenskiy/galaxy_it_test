@@ -1,0 +1,80 @@
+@media screen and (min-width: 768px) {
+  .header {
+    background: transparent;
+  }
+  .main_container {
+    display: flex;
+    align-items: center;
+    background: url(../img/main_background.webp) no-repeat;
+    background-size: contain;
+    background-position: 90% 30px;
+    .title_main h2 {
+      font-size: 43px;
+    }
+    .mein_slider {
+      width: 50%;
+      display: block;
+      align-self: center;
+      .owl-carousel {
+        width: 100%;
+        display: flex;
+        .owl-dots {
+          align-self: flex-end;
+          margin-bottom: 30px;
+        }
+
+        .owl-dot {
+          text-align: right;
+          button {
+            background: none;
+            border: none;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 44px;
+            letter-spacing: 0.07em;
+            color: #cecece;
+            font-family: "Montserrat", sans-serif;
+            transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+          }
+
+          &.active {
+            button {
+              font-weight: 700;
+              font-size: 48px;
+              line-height: 78px;
+              color: #0f0f0f;
+              position: relative;
+              margin-left: 30px;
+              &::before {
+                content: "";
+                position: absolute;
+                width: 28px;
+                height: 3px;
+                background: #000000;
+                top: 0;
+                left: -30px;
+                bottom: 0;
+                margin: auto 0;
+              }
+            }
+          }
+        }
+      }
+
+      .slide {
+        width: 100%;
+
+        img {
+          display: inline-block;
+          max-width: 737px;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
