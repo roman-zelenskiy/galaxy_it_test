@@ -1,23 +1,32 @@
 @media screen and (min-width: 1200px) {
   .main_container {
     .title_main h2 {
-        font-size: 68px;
+      font-size: 68px;
     }
-    .mein_slider {
-      .owl-carousel {
-        .owl-dot {
-          button {
-            font-size: 36px;
-            line-height: 44px;
-          }
+    .mein_slider .owl-carousel {
+      .owl-dot button {
+        font-size: 36px;
+        line-height: 44px;
+      }
 
-          &.active {
-            button {
-              font-size: 64px;
-              line-height: 78px;
-            }
-          }
+      &.active {
+        button {
+          font-size: 64px;
+          line-height: 78px;
         }
+      }
+    }
+  }
+  .sale_section {
+    .container_sale_section {
+      .item_sale h5 {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      .item_sale p {
+        font-size: 13px;
+        line-height: 15px;
       }
     }
   }

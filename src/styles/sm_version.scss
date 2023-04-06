@@ -1,1 +1,18 @@
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+  .sale_section {
+    .container_sale_section {
+      .item_sale h5 {
+        font-weight: 700;
+        font-size: 28px;
+      }
+
+      .item_sale p {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 0.07em;
+        color: #0f0f0f;
+      }
+    }
+  }
+}
