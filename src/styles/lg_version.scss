@@ -16,8 +16,15 @@
       top: auto;
       left: auto;
       padding: 0;
-      li {
+      & > li {
         margin-right: 25px;
+        border-bottom: 2px solid transparent;
+        a {
+          padding: 0;
+        }
+        &:hover {
+          border-color: #000000;
+        }
       }
     }
     .burger_icon {
@@ -28,6 +35,96 @@
         display: inline-block;
         width: 90px;
         height: 74px;
+      }
+    }
+  }
+  .product_section .tabs_product {
+    .tabs_content .tabs_content_box {
+      gap: 20px;
+    }
+  }
+  .trend_section {
+    background: #f5f5f5;
+    padding: 50px 0;
+  }
+  .container_more_content {
+    .more_news {
+      margin-top: 40px;
+    }
+    .tabs_more_content {
+      .tabs_content {
+        .new_tabs_item {
+          .content {
+            gap: 15px;
+          }
+        }
+      }
+    }
+  }
+  .subscribe_section {
+    padding: 40px 0;
+    .container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .subscribe,
+    .messengers {
+      margin-top: 0;
+    }
+  }
+  .footer {
+    padding-top: 50px;
+    .logo {
+      svg {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    & > .container {
+      padding-bottom: 50px;
+      flex-wrap: nowrap;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .about_company {
+      order: 2;
+    }
+
+    .for_customers {
+      order: 3;
+    }
+
+    .about_company,
+    .for_customers {
+      align-self: stretch;
+      flex-basis: auto;
+      margin-top: 0px;
+      ul {
+        margin-top: 50px;
+      }
+    }
+
+    .contacts_social {
+      flex-basis: 60%;
+      margin-top: 0px;
+      flex-basis: auto;
+      order: 4;
+    }
+
+    .privacy_policy .container {
+      .links {
+        margin-left: 40px;
+        width: auto;
+        order: 2;
+        margin-top: 0px;
+      }
+
+      .design {
+        order: 2;
+        margin-top: 0px;
       }
     }
   }

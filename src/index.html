@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
     <title>Hector</title>
 </head>
 
@@ -35,11 +36,11 @@
                 </a>
                 <ul class="user_menu">
                     <li>
-                       <a href="#">
+                        <a href="#">
                             <svg>
                                 <use xlink:href="./img/svg/symbols.svg#search"></use>
                             </svg>
-                       </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
@@ -66,14 +67,14 @@
             </div>
         </header>
         <div class="main_container container">
-            <div class="title_main">   
+            <div class="title_main">
                 <h2>МУЖСКАЯ КОЛЛЕКЦИЯ</h2>
                 <p>Распродажа коллекций со скидками до 50%, доставка до вашего склада</p>
                 <a href="#" class="detailed_btn">ПОДРОБНЕЕ</a>
             </div>
             <div class="mein_slider">
                 <div class="owl-carousel">
-                    <div class="slide" data-dot="<button>01</button>"> 
+                    <div class="slide" data-dot="<button>01</button>">
                         <img src="./img/men_title.webp" alt="men title">
                     </div>
                     <div class="slide" data-dot="<button>02</button>">
@@ -114,6 +115,538 @@
             </div>
         </div>
     </section>
+    <div class="product_section">
+        <div class="container container_product_section">
+            <div class="tabs_product tabs">
+                <nav>
+                    <button data-tabs-id="new" class="active tabs_btn_item">Новинки</button>
+                    <button data-tabs-id="top_sales" class="tabs_btn_item">ТОП продаж</button>
+                    <button data-tabs-id="discounts" class="tabs_btn_item">Скидки</button>
+                </nav>
+                <div class="tabs_content">
+                    <div data-tabs-id="new" class="active tabs_block tabs_content_box">
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                    </div>
+                    <div data-tabs-id="top_sales" class="tabs_block tabs_content_box">
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                    </div>
+                    <div data-tabs-id="discounts" class="tabs_block tabs_content_box">
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                        <div class="card_product">
+                            <span class="new" data-text="new"></span>
+                            <img class="img_product" src="./img/card_product_man.webp" alt="">
+                            <div class="rating_size">
+                                <img class="rating_stars" src="./img/rating.webp" alt="">
+                                <p class="size">
+                                    <span class="s_size">S</span>
+                                    <span class="m_size">M</span>
+                                    <span class="l_size">L</span>
+                                </p>
+                            </div>
+                            <p class="name_product">Футболка мужская Exclusive 22032</p>
+                            <p class="price_product">245₴</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="view_catalog_btn">Посмотреть каталог</a>
+        </div>
+    </div>
+    <div class="more_content_section">
+        <div class="container container_more_content">
+            <div class="tabs tabs_more_content">
+                <nav>
+                    <button data-tabs-id="new_more_content" class="active tabs_btn_item">Новинки</button>
+                    <button data-tabs-id="reviews_more_content" class="tabs_btn_item">ТОП продаж</button>
+                </nav>
+                <div class="tabs_content">
+                    <div data-tabs-id="new_more_content" class="active tabs_content_box">
+                        <div class="new_tabs_item">
+                            <div class="background"><img src="./img/cloth_trend.webp" alt="men cloth"></div>
+                            <div class="content">
+                                <h4 class="title">Тренды мужской одежды 2020</h4>
+                                <p class="text">Распродажа коллекций со скидками до 50%,
+                                    доставка до вашего склада</p>
+                                <a class="read_more_btn" href="#">ЧИТАТЬ</a>
+                            </div>
+                        </div>
+                        <div class="new_tabs_item">
+                            <div class="background"><img src="./img/cloth_trend.webp" alt="men cloth"></div>
+                            <div class="content">
+                                <h4 class="title">Тренды мужской одежды 2020</h4>
+                                <p class="text">Распродажа коллекций со скидками до 50%,
+                                    доставка до вашего склада</p>
+                                <a class="read_more_btn" href="#">ЧИТАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tabs-id="reviews_more_content" class="tabs_content_box">
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="more_news">Посмотреть каталог</a>
+        </div>
+    </div>
+    <section class="subscribe_section">
+        <div class="container">
+            <h3 class="title">Подпишись и следи за новыми поступлениями и акциями</h3>
+            <div class="subscribe_social">
+                <div class="messengers">
+                    <a class="viber" href="#">
+                        <svg class="telephobe_icon">
+                            <use xlink:href="./img/svg/symbols.svg#viber"></use>
+                        </svg>
+                    </a>
+                    <a class="telegram" href="#">
+                        <svg class="telephobe_icon">
+                            <use xlink:href="./img/svg/symbols.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="subscribe">
+                    <div class="input_subscribe">
+                        <svg class="telephobe_icon">
+                            <use xlink:href="./img/svg/symbols.svg#telephone"></use>
+                        </svg>
+                        <input id="input_subscribe" type="tel">
+                    </div>
+                    <button class="btn_subscribe">ПОДПИСАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="background_image"></div>
+            <a href="#" class="logo" title="logo">
+                <svg>
+                    <use xlink:href="./img/svg/symbols.svg#logo"></use>
+                </svg>
+            </a>
+            <div class="about_company">
+                <h5 class="title">О КОМПАНИИ</h5>
+                <ul class="menu_about_company">
+                    <li>
+                        <a href="#">Доставка и оплата одежды</a>
+                    </li>
+                    <li>
+                        <a href="#">Опт</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="for_customers">
+                <h5 class="title">ЗАКАЗЧИКАМ</h5>
+                <ul class="menu_for_customers">
+                    <li>
+                        <a href="#">Личный кабинет</a>
+                    </li>
+                    <li>
+                        <a href="#">Возврат товара</a>
+                    </li>
+                    <li>
+                        <a href="#">История заказов</a>
+                    </li>
+                    <li>
+                        <a href="#">Обратная связь</a>
+                    </li>
+                    <li>
+                        <a href="#">Закладки</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts_social">
+                <a class="tel_number" href="tel:+380683460475">+38 068 346 04 75</a>
+                <a class="tel_number" href="tel:+380664003814">+38 066 400 38 14</a>
+                <ul class="social_networks">
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#viber"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="vertical_line"></li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#google"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/svg/symbols.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="privacy_policy">
+            <div class="container">
+                <p>© 2020 <span class="uppercase">HECTOR</span> Все права защищены</p>
+                <p class="links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <span class="vertical_line"></span>
+                    <a href="#">Условия продажи</a>
+                </p>
+                <p class="design">
+                    Design and development
+                    <svg>
+                        <use xlink:href="./img/svg/symbols.svg#logo_galaxy_it"></use>
+                    </svg>
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="./script/script.js" defer></script>
 </body>
 

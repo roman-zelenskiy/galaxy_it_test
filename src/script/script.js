@@ -24,3 +24,19 @@ $('.owl-carousel').owlCarousel({
     autoplayTimeout:3000,
     autoplayHoverPause:true
 })
+
+
+
+// tabs
+$('.tabs nav .tabs_btn_item').click(function () {
+  $(this).closest('.tabs').find('nav .tabs_btn_item').removeClass('active');
+  $(this).addClass('active');
+  $(`.tabs .tabs_content .tabs_content_box[data-tabs-id="${$(this).attr(`data-tabs-id`)}"]`)
+    .addClass('active');
+})
+
+// mask input telephone
+
+$(document).ready(function() {
+  $('#input_subscribe').mask('+38 (999) 999-99-99', {placeholder: '+38 (___) ___-___-___'});
+});

@@ -29,6 +29,7 @@
         .owl-dot {
           text-align: right;
           button {
+            cursor: pointer;
             background: none;
             border: none;
             font-weight: 300;
@@ -103,4 +104,36 @@
       }
     }
   }
+  .product_section {
+    .tabs .tabs_content {
+      margin-top: 70px;
+    }
+    .tabs_product .tabs_content .tabs_content_box .card_product {
+      &:first-child,
+      &:last-child {
+        display: flex;
+      }
+      flex-basis: 23%;
+    }
+  }
+  .container_more_content {
+    .tabs_more_content {
+      .tabs_content {
+        & > div {
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+        .new_tabs_item {
+          width: 50%;
+        }
+      }
+    }
+  }
+        .subscribe_section {
+          .subscribe_social {
+            .subscribe .input_subscribe input {
+              font-size: 24px;
+            }
+          }
+        }
 }

@@ -55,5 +55,14 @@ exports.buildProject = gulp.series(
     buildStylesTask,
     buildScripts,
     convertToWebp,
+);
+
+
+exports.watchProject = gulp.series(
+    onSvgSprite,
+    copyHTMLFile,
+    buildStylesTask,
+    buildScripts,
+    convertToWebp,
     watchСhanges
 );

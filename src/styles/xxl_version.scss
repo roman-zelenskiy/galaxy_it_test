@@ -49,10 +49,6 @@
 
       .detailed_btn {
         margin-top: 60px;
-        font-size: 18px;
-        line-height: 22px;
-        padding: 25px 90px;
-        border: 1px solid #000000;
       }
     }
   }
@@ -68,6 +64,33 @@
         font-size: 16px;
         line-height: 20px;
       }
+    }
+  }
+  .container_more_content {
+    .more_news {
+      margin-top: 60px;
+    }
+    .tabs_more_content .tabs_content .new_tabs_item {
+      .content {
+        gap: 20px;
+      }
+    }
+  }
+  .subscribe_section {
+    padding: 70px 0;
+  }
+  .footer {
+    padding-top: 200px;
+
+    .logo {
+      svg {
+        width: 176px;
+        height: 151px;
+      }
+    }
+
+    & > .container {
+      padding-bottom: 100px;
     }
   }
 }

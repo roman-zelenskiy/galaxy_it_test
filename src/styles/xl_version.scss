@@ -23,11 +23,37 @@
         font-size: 20px;
         line-height: 25px;
       }
-
       .item_sale p {
         font-size: 13px;
         line-height: 15px;
       }
+    }
+  }
+  .product_section {
+    padding: 90px 0 95px 0;
+    .tabs_product .tabs_content {
+      margin-top: 100px;
+    }
+
+    .tabs_product .tabs_content .tabs_content_box {
+      gap: 80px 30px;
+    }
+    .view_catalog_btn {
+      margin-top: 73px;
+    }
+  }
+  .more_content_section {
+    padding: 79px 0;
+  }
+  .container_more_content {
+    .more_news {
+      margin-top: 50px;
+    }
+  }
+  .footer {
+    padding-top: 70px;
+    & > .container {
+      padding-bottom: 70px;
     }
   }
 }
