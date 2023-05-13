@@ -56,8 +56,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="user_signin">
+                        <a href="#" data-modal="signin_modal">
                             <svg>
                                 <use xlink:href="./img/svg/symbols.svg#user_icon"></use>
                             </svg>
@@ -647,6 +647,45 @@
             </div>
         </div>
     </footer>
+    <div class="modal_autorization modal_head" id="signin_modal">
+        <div class="modal_wrap">
+            <button class="close_modal"></button>
+            <svg class="logo_modal logo_top">
+                <use xlink:href="./img/svg/symbols.svg#logo_not_text"></use>
+            </svg>
+            <svg class="logo_modal logo_bottom">
+                <use xlink:href="./img/svg/symbols.svg#logo_not_text"></use>
+            </svg>
+            <div class="modal_content">
+                <div class="tabs">
+                    <nav class="switch_autorization">
+                        <button data-tabs-id="login_form" class="active tabs_btn_item login_switch_btn">ЛОГИН</button>
+                        <button data-tabs-id="registration_form" class="tabs_btn_item registration_switch_btn">РЕГИСТРАЦИЯ</button>
+                    </nav>
+                    <div class="tabs_content">
+                        <div data-tabs-id="login_form" class="active login_form tabs_content_box">
+                            <div class="input_box">
+                                <input type="email" placeholder="Введите email">
+                                <input type="password" placeholder="Введите пароль">
+                            </div>
+                            <button class="btn_login">Войти</button>
+                        </div>
+                        <div data-tabs-id="registration_form" class="registration_form tabs_content_box">
+                            <div class="input_box">
+                                <input type="text" placeholder="Ввудите имя">
+                                <input type="text" placeholder="Введите Город">
+                                <input type="tel" placeholder="Введите телефон">
+                                <input type="email" placeholder="Введите email">
+                                <input type="password" placeholder="Введите пароль">
+                                <input type="password" placeholder="Потвердите пароль">
+                            </div>
+                            <button class="btn_registration">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./script/script.js" defer></script>
 </body>
 
