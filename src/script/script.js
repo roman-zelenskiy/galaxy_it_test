@@ -29,7 +29,7 @@ $('.owl-carousel').owlCarousel({
 
 // tabs
 $('.tabs nav .tabs_btn_item').click(function () {
-  $(this).closest('.tabs').find('nav .tabs_btn_item').removeClass('active');
+  $(this).closest('.tabs').find('nav .tabs_btn_item, .tabs_content .tabs_content_box').removeClass('active');
   $(this).addClass('active');
   $(`.tabs .tabs_content .tabs_content_box[data-tabs-id="${$(this).attr(`data-tabs-id`)}"]`)
     .addClass('active');
@@ -40,3 +40,15 @@ $('.tabs nav .tabs_btn_item').click(function () {
 $(document).ready(function() {
   $('#input_subscribe').mask('+38 (999) 999-99-99', {placeholder: '+38 (___) ___-___-___'});
 });
+
+
+// open modal signin
+$('.user_signin a').click(function (e) {
+  console.log($(this).attr('data-modal'));
+  console.log($(`#${$(this).attr('data-modal')}`));
+  $(`#${$(this).attr('data-modal')}`).addClass('active');
+})
+
+$('.modal_head .close_modal').click(function () {
+  $(this).closest('.modal_head').removeClass('active')
+})

@@ -133,7 +133,8 @@ body {
   left: 0;
   display: flex;
   width: 100%;
-  padding: 10px 0;
+  height: 50px;
+  align-items: center;
   background: #f5f5f5;
   justify-content: space-around;
   li svg {
@@ -553,7 +554,9 @@ body {
 
 .footer {
   padding: 30px 0 0 0;
+  padding-bottom: 50px;
   background: #636363;
+  overflow: hidden;
   .logo {
     align-self: flex-start;
     fill: #ffffff;
@@ -581,7 +584,7 @@ body {
       -moz-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       -o-transform: rotate(180deg);
-}
+    }
 
     .background_image:before,
     .background_image:after {
@@ -600,7 +603,7 @@ body {
       -moz-transform: skew(0deg, 25deg);
       -ms-transform: skew(0deg, 25deg);
       -o-transform: skew(0deg, 25deg);
-}
+    }
 
     .background_image:after {
       right: 0;
@@ -609,7 +612,7 @@ body {
       -moz-transform: skew(0deg, -25deg);
       -ms-transform: skew(0deg, -25deg);
       -o-transform: skew(0deg, -25deg);
-}
+    }
   }
   .about_company,
   .for_customers {
@@ -715,6 +718,173 @@ body {
       .uppercase {
         text-transform: uppercase;
       }
+    }
+  }
+}
+
+.modal_head {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  display: none;
+  &.active {
+    display: flex;
+  }
+  .modal_wrap {
+    margin: 0 35px 0 50px;
+    padding: 30px 20px;
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      border: 3px solid #0f0f0f;
+    }
+  }
+  .modal_content {
+    position: relative;
+    z-index: 5;
+  }
+  .logo_modal {
+    position: absolute;
+    fill: #cecece;
+    &.logo_top {
+      width: 100px;
+      height: 100px;
+      top: -50px;
+      left: -50px;
+      z-index: -1;
+    }
+    &.logo_bottom {
+      bottom: -35px;
+      right: -35px;
+      width: 70px;
+      height: 70px;
+      z-index: -1;
+    }
+  }
+  .close_modal {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 3px solid #0f0f0f;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    margin-left: -50%;
+    right: -20px;
+    background: #ffffff;
+    top: -20px;
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 50%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background: #0f0f0f;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -webkit-transform: rotate();
+    }
+  }
+}
+
+.modal_autorization {
+  .switch_autorization {
+    border: none;
+    flex-direction: column;
+    margin-bottom: 3%;
+    .tabs_btn_item {
+      @include btn_white_black();
+      border-width: 3px;
+      width: 100%;
+      padding: 2% 0;
+      &.active {
+        background: #000000;
+        color: #ffffff;
+        &:hover {
+          background: #000000;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .tabs_content {
+    input {
+      font-weight: 700;
+      @include adaptiv-font(18, 13, 1400);
+      line-height: 22px;
+      color: #0f0f0f;
+      background: none;
+      border: none;
+      letter-spacing: 0.07em;
+      padding: 14px 0;
+      display: inline-block;
+      max-width: 375px;
+      width: 100%;
+      border-bottom: 3px solid #0f0f0f;
+      &::placeholder {
+        color: #0f0f0f;
+        letter-spacing: 0.07em;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .btn_registration,
+    .btn_login {
+      @include btn_white_black();
+      max-width: 375px;
+      width: 100%;
+      margin-top: 3%;
+      padding: 2% 0;
+      border-width: 3px;
+    }
+    .registration_form,
+    .login_form {
+      align-items: center;
+      flex-direction: column;
+      &.active {
+        display: flex;
+      }
+    }
+    .input_box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 10px;
     }
   }
 }
